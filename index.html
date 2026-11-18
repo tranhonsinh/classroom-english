@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classroom English song ngữ</title>
+<meta name="description" content="59 câu Classroom English song ngữ Anh – Việt, có phát âm chuẩn, phiên âm IPA và mẹo phát âm cho giáo viên. Tác giả: Trần Văn Hơn – Trường THCS Bùi Hữu Nghĩa, Long Xuyên, An Giang.">
+<meta name="author" content="Trần Văn Hơn">
+<meta property="og:title" content="Classroom English song ngữ">
+<meta property="og:description" content="59 câu tiếng Anh dùng trong lớp, kèm tiếng Việt, phát âm chuẩn và phiên âm IPA.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1F3A31">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Charis+SIL:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: chalkboard header band with the lesson arc (9 stages), then a paper "phrasebook" of rows grouped by stage. */
+:root{
+  --paper:#F3F6F3; --surface:#FFFFFF; --ink:#16231E; --muted:#56675F; --line:#D5DED8;
+  --board:#1F3A31; --board-ink:#EAF2EC; --board-muted:#A9C2B6;
+  --accent:#2C6E57; --accent-soft:#E1EEE7; --chalk:#E8C35A; --chalk-soft:#FBF1D2; --b1:#8A4FB0; --b1-soft:#F1E7F7;
+  --font-display:"Literata", Georgia, "Times New Roman", serif;
+  --font-body:"Lexend", "Segoe UI", system-ui, sans-serif;
+  --font-ipa:"Charis SIL", "Doulos SIL", "Gentium Plus", "Lucida Sans Unicode", serif;
+  --radius:10px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#111916; --surface:#17221D; --ink:#E4EDE8; --muted:#9AAEA4; --line:#2A3A33;
+    --board:#0C1411; --board-ink:#E4EDE8; --board-muted:#8FA99C;
+    --accent:#7CC7A7; --accent-soft:#1E3129; --chalk:#E8C35A; --chalk-soft:#3A3220; --b1:#C79BE6; --b1-soft:#2E2238;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#111916; --surface:#17221D; --ink:#E4EDE8; --muted:#9AAEA4; --line:#2A3A33;
+  --board:#0C1411; --board-ink:#E4EDE8; --board-muted:#8FA99C;
+  --accent:#7CC7A7; --accent-soft:#1E3129; --chalk:#E8C35A; --chalk-soft:#3A3220; --b1:#C79BE6; --b1-soft:#2E2238;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.5;font-weight:400}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--chalk);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+/* Header */
+.board{background:var(--board);color:var(--board-ink);padding:28px 20px 0;position:relative;overflow:hidden}
+.board::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;
+  background-image:radial-gradient(circle at 20% 30%,#fff 0 1px,transparent 1.5px),radial-gradient(circle at 70% 60%,#fff 0 1px,transparent 1.5px);
+  background-size:23px 19px,31px 27px}
+.wrap{max-width:1180px;margin:0 auto}
+.title{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px}
+.title h1{font-family:var(--font-display);font-weight:700;font-size:clamp(1.7rem,3.6vw,2.6rem);line-height:1.1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.title h1 em{font-style:normal;color:var(--chalk)}
+.title p{margin:6px 0 0;color:var(--board-muted);max-width:60ch;font-size:.95rem}
+.stats{display:flex;gap:18px;font-size:.85rem;color:var(--board-muted)}
+.stats b{display:block;font-family:var(--font-display);font-size:1.5rem;color:var(--board-ink);font-variant-numeric:tabular-nums}
+
+
+/* Author bar */
+.author{position:relative;z-index:1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding-bottom:16px;margin-bottom:20px;border-bottom:1px solid rgba(255,255,255,.14)}
+.author .who{font-size:.82rem;font-weight:600;letter-spacing:.06em;color:var(--board-ink);line-height:1.45}
+.author .who span{color:var(--chalk)}
+.social{display:flex;flex-wrap:wrap;gap:8px}
+.social a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#fff;font-size:.85rem;font-weight:500;padding:6px 14px 6px 6px;border-radius:999px;transition:filter .15s,transform .15s}
+.social a:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.social a .ico{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.18);display:grid;place-items:center}
+.social .fb{background:#1877F2}
+.social .zl{background:#0068FF}
+.social small{font-weight:400;opacity:.85;font-variant-numeric:tabular-nums}
+
+/* Lesson arc */
+.arc{margin-top:22px;display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:0;position:relative;z-index:1}
+.arc button{background:none;border:0;cursor:pointer;color:var(--board-muted);text-align:left;padding:14px 8px 16px 0;border-top:3px solid rgba(255,255,255,.14);font-size:.78rem;line-height:1.25;transition:color .15s,border-color .15s}
+.arc button span{display:block;font-family:var(--font-display);font-size:1.05rem;color:var(--board-ink);opacity:.55;margin-bottom:2px}
+.arc button:hover,.arc button.on{color:var(--board-ink);border-top-color:var(--chalk)}
+.arc button.on span,.arc button:hover span{opacity:1;color:var(--chalk)}
+
+/* Toolbar */
+.toolbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.toolbar .wrap{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:12px 20px}
+.search{flex:1 1 220px;position:relative}
+.search input{width:100%;padding:9px 12px 9px 36px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.ctl{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--muted)}
+.ctl select{padding:7px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);max-width:190px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{border:0;background:none;padding:6px 12px;cursor:pointer;font-size:.85rem;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+input[type=range]{accent-color:var(--accent);width:96px}
+.rate{font-variant-numeric:tabular-nums;min-width:3.2ch;color:var(--ink)}
+.toggles{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 11px;font-size:.82rem;cursor:pointer;color:var(--muted)}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.btn-main{border:0;background:var(--chalk);color:#2a2410;font-weight:600;border-radius:999px;padding:8px 16px;cursor:pointer;display:inline-flex;gap:8px;align-items:center}
+.btn-main:hover{filter:brightness(1.05)}
+
+.notice{max-width:1180px;margin:14px auto 0;padding:0 20px}
+.notice div{background:var(--chalk-soft);border:1px solid color-mix(in srgb,var(--chalk) 50%,transparent);border-radius:var(--radius);padding:10px 14px;font-size:.88rem}
+.notice[hidden]{display:none}
+
+/* Sections */
+main{padding:8px 20px 80px}
+.sec{max-width:1180px;margin:36px auto 0;scroll-margin-top:80px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.sec-head h2{margin:0;font-family:var(--font-display);font-weight:600;font-size:1.45rem;line-height:1.2;text-wrap:balance}
+.sec-head h2 .num{color:var(--accent);margin-right:8px;font-variant-numeric:tabular-nums}
+.sec-head h2 small{display:block;font-family:var(--font-body);font-weight:400;font-size:.9rem;color:var(--muted);margin-top:2px}
+.play-sec{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;cursor:pointer;font-size:.85rem;display:inline-flex;align-items:center;gap:6px}
+.play-sec:hover{border-color:var(--accent);color:var(--accent)}
+.play-sec.playing{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+
+.row{display:grid;grid-template-columns:2.6rem minmax(0,1.25fr) minmax(0,1fr) auto;gap:6px 18px;align-items:start;padding:16px 4px;border-bottom:1px solid var(--line);transition:background .2s}
+.row.speaking{background:var(--chalk-soft)}
+.n{font-family:var(--font-display);color:var(--muted);font-variant-numeric:tabular-nums;font-size:.95rem;padding-top:4px}
+.en{font-family:var(--font-display);font-size:1.28rem;font-weight:500;line-height:1.35}
+.en .w{cursor:pointer;border-radius:4px;transition:background .12s}
+.en .w:hover{background:var(--accent-soft)}
+.en .w.hl{background:var(--chalk);color:#2a2410}
+.ipa{font-family:var(--font-ipa);color:var(--accent);font-size:1.02rem;margin-top:3px;letter-spacing:.01em}
+.tip{margin-top:8px;font-size:.84rem;color:var(--muted);display:flex;gap:6px;max-width:62ch}
+.tip svg{flex:none;margin-top:3px;color:var(--chalk)}
+.vi{font-size:1.02rem;padding-top:4px}
+.lv{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.04em;padding:1px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:2px}
+.lv.B1{background:var(--b1-soft);color:var(--b1)}
+.acts{display:flex;gap:6px;align-items:center}
+.ib{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);cursor:pointer;display:grid;place-items:center;color:var(--ink);position:relative}
+.ib:hover{border-color:var(--accent);color:var(--accent)}
+.ib.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.ib.primary:hover{filter:brightness(1.08);color:var(--surface)}
+.ib:disabled{opacity:.35;cursor:not-allowed}
+.ib .lbl{position:absolute;bottom:-3px;right:-3px;font-size:.58rem;font-weight:600;background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:0 3px;line-height:1.3;color:var(--muted)}
+.ib.star[aria-pressed="true"]{color:var(--chalk);border-color:var(--chalk)}
+.ib.star[aria-pressed="true"] svg{fill:currentColor}
+
+body.no-ipa .ipa,body.no-tip .tip{display:none}
+body.no-vi .vi .txt{filter:blur(6px);cursor:pointer;user-select:none}
+body.no-en .en{filter:blur(7px);cursor:pointer}
+body.no-en .ipa{visibility:hidden}
+
+.empty{max-width:1180px;margin:48px auto;text-align:center;color:var(--muted)}
+
+@media (max-width:860px){
+  .arc{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(118px,1fr);overflow-x:auto;scrollbar-width:none}
+  .row{grid-template-columns:2rem minmax(0,1fr);}
+  .row .vi{grid-column:2}
+  .row .acts{grid-column:2;padding-top:4px}
+}
+
+/* Practice overlay */
+.practice{position:fixed;inset:0;z-index:50;background:var(--board);color:var(--board-ink);display:flex;flex-direction:column}
+.practice[hidden]{display:none}
+.p-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;flex-wrap:wrap}
+.p-top .seg{background:transparent;border-color:rgba(255,255,255,.2)}
+.p-top .seg button{color:var(--board-muted)}
+.p-top .seg button[aria-pressed="true"]{background:var(--chalk);color:#2a2410}
+.p-close{border:1px solid rgba(255,255,255,.25);background:none;color:var(--board-ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.p-body{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;gap:14px;overflow:auto}
+.p-meta{color:var(--board-muted);font-size:.9rem}
+.p-q{font-size:clamp(1.6rem,4.5vw,3.2rem);font-family:var(--font-display);font-weight:600;line-height:1.2;max-width:22ch;text-wrap:balance}
+.p-q.vi-q{font-family:var(--font-body);font-weight:500}
+.p-a{min-height:7.5rem;display:flex;flex-direction:column;align-items:center;gap:6px}
+.p-a .a{font-size:clamp(1.2rem,3vw,2rem);color:var(--chalk);font-family:var(--font-display);max-width:30ch;text-wrap:balance}
+.p-a .a.vi-a{font-family:var(--font-body)}
+.p-a .i{font-family:var(--font-ipa);color:var(--board-muted);font-size:clamp(1rem,2vw,1.3rem)}
+.p-a .hide{opacity:0}
+.p-ctrls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:0 20px 28px}
+.p-ctrls button{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.04);color:var(--board-ink);border-radius:999px;padding:10px 18px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.p-ctrls button:hover{border-color:var(--chalk)}
+.p-ctrls .reveal{background:var(--chalk);color:#2a2410;border-color:var(--chalk);font-weight:600}
+.kbd{font-size:.78rem;color:var(--board-muted);text-align:center;padding-bottom:14px}
+</style>
+</head>
+<body>
+<header class="board">
+  <div class="wrap">
+    <div class="author">
+      <div class="who">TÁC GIẢ: <span>TRẦN VĂN HƠN</span> · TRƯỜNG THCS BÙI HỮU NGHĨA · PHƯỜNG LONG XUYÊN · AN GIANG</div>
+      <div class="social">
+        <a class="fb" href="https://www.facebook.com/share/1EeuKQJGhR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Trang Facebook cá nhân của Trần Văn Hơn">
+          <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Facebook
+        </a>
+        <a class="zl" href="https://zalo.me/0939914868" target="_blank" rel="noopener noreferrer" aria-label="Nhắn Zalo cho Trần Văn Hơn, số 0939 914 868">
+          <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></span>Zalo <small>0939 914 868</small>
+        </a>
+      </div>
+    </div>
+    <div class="title">
+      <div>
+        <h1>Classroom English <em>song ngữ</em></h1>
+        <p>59 câu tiếng Anh dùng trong lớp, xếp theo tiến trình một tiết học. Bấm vào câu để nghe phát âm, bấm vào từng từ để nghe riêng từ đó.</p>
+      </div>
+      <div class="stats" aria-label="Thống kê">
+        <div><b>9</b>phần</div>
+        <div><b>59</b>câu</div>
+        <div><b id="statShown">59</b>đang hiện</div>
+      </div>
+    </div>
+    <nav class="arc" id="arc" aria-label="Các phần của tiết học"></nav>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap">
+    <label class="search" for="q">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Tìm câu tiếng Anh hoặc tiếng Việt…" autocomplete="off">
+    </label>
+    <div class="ctl">Giọng
+      <div class="seg" role="group" aria-label="Giọng đọc">
+        <button type="button" id="accGB" aria-pressed="true">Anh–Anh</button>
+        <button type="button" id="accUS" aria-pressed="false">Anh–Mỹ</button>
+      </div>
+    </div>
+    <label class="ctl" for="voice">Người đọc <select id="voice"></select></label>
+    <label class="ctl" for="rate">Tốc độ <input id="rate" type="range" min="0.5" max="1.2" step="0.05" value="0.9"><span class="rate" id="rateVal">0.9×</span></label>
+    <button type="button" class="btn-main" id="openPractice">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 12h8M12 8v8"/></svg>
+      Luyện tập / Trình chiếu
+    </button>
+  </div>
+  <div class="wrap" style="padding-top:0">
+    <div class="toggles" role="group" aria-label="Tuỳ chọn hiển thị">
+      <button type="button" class="chip" id="tIpa" aria-pressed="true">Phiên âm IPA</button>
+      <button type="button" class="chip" id="tTip" aria-pressed="true">Mẹo phát âm</button>
+      <button type="button" class="chip" id="tVi" aria-pressed="true">Hiện tiếng Việt</button>
+      <button type="button" class="chip" id="tEn" aria-pressed="true">Hiện tiếng Anh</button>
+      <button type="button" class="chip" id="tReadVi" aria-pressed="true">Phát cả phần: đọc kèm tiếng Việt</button>
+      <button type="button" class="chip" id="fB1" aria-pressed="false">Chỉ câu B1</button>
+      <button type="button" class="chip" id="fStar" aria-pressed="false">Chỉ câu đã đánh dấu</button>
+    </div>
+  </div>
+</div>
+
+<div class="notice" id="notice" hidden><div id="noticeText"></div></div>
+
+<main id="list"></main>
+
+<section class="practice" id="practice" hidden aria-label="Luyện tập">
+  <div class="p-top">
+    <div class="seg" role="group" aria-label="Chiều luyện tập">
+      <button type="button" id="dirVE" aria-pressed="true">Việt → Anh</button>
+      <button type="button" id="dirEV" aria-pressed="false">Anh → Việt</button>
+    </div>
+    <span class="p-meta" id="pMeta"></span>
+    <button type="button" class="p-close" id="pClose">Đóng (Esc)</button>
+  </div>
+  <div class="p-body">
+    <div class="p-meta" id="pSec"></div>
+    <div class="p-q" id="pQ"></div>
+    <div class="p-a" id="pA"></div>
+  </div>
+  <div class="p-ctrls">
+    <button type="button" id="pPrev">← Câu trước</button>
+    <button type="button" id="pListen">▶ Nghe</button>
+    <button type="button" id="pSlow">Nghe chậm</button>
+    <button type="button" class="reveal" id="pReveal">Hiện đáp án</button>
+    <button type="button" id="pShuffle">Trộn câu</button>
+    <button type="button" id="pNext">Câu tiếp →</button>
+  </div>
+  <div class="kbd">Phím tắt: Space hiện đáp án · ← → chuyển câu · L nghe · Esc đóng</div>
+</section>
+
+<script>
+const DATA = [{"vi": "Mở đầu bài học", "en": "Opening the Lesson", "items": [{"n": 1, "en": "Good morning/good afternoon, everyone!", "vi": "Chào các em!", "lv": "A2", "ipa": "ɡʊd ˈmɔːnɪŋ | ɡʊd ˌɑːftəˈnuːn | ˈevriwʌn", "tip": "“afternoon” nhấn âm cuối (af-ter-NOON); “everyone” nhấn âm đầu (EV-ery-one).", "say": "Good morning, good afternoon, everyone!"}, {"n": 2, "en": "How are you today?", "vi": "Hôm nay các em thế nào?", "lv": "A2", "ipa": "haʊ ə juː təˈdeɪ"}, {"n": 3, "en": "Let's begin today's lesson.", "vi": "Hãy cùng bắt đầu bài học hôm nay.", "lv": "A2", "ipa": "lets bɪˈɡɪn təˈdeɪz ˈlesn̩", "tip": "Đọc rõ âm /ts/ cuối “Let's”. “lesson” là /ˈlesn̩/: âm “o” gần như không phát ra."}, {"n": 4, "en": "Please take your seats.", "vi": "Các em ngồi vào chỗ nhé.", "lv": "A2", "ipa": "pliːz ˈteɪk jɔː ˈsiːts", "tip": "Đọc rõ cụm /ts/ cuối “seats”, đừng nuốt âm."}, {"n": 5, "en": "Are you ready?", "vi": "Các em đã sẵn sàng chưa?", "lv": "A2", "ipa": "ɑː juː ˈredi"}]}, {"vi": "Giao nhiệm vụ", "en": "Giving Instructions", "items": [{"n": 6, "en": "Read the question carefully.", "vi": "(Các) em hãy đọc kỹ đề bài.", "lv": "A2", "ipa": "ˈriːd ðə ˈkwestʃən ˈkeəfəli", "tip": "“question” có âm /tʃ/ (gần “ch”), không đọc thành “kuét-sần”. “carefully” nhấn âm đầu."}, {"n": 7, "en": "Write your answer.", "vi": "(Các) em hãy viết câu trả lời của mình.", "lv": "A2", "ipa": "ˈraɪt jɔːr ˈɑːnsə"}, {"n": 8, "en": "Work individually.", "vi": "Các em hãy làm việc cá nhân.", "lv": "A2", "ipa": "ˈwɜːk ˌɪndɪˈvɪdʒuəli", "tip": "“individually” nhấn âm thứ ba: in-di-VID-u-al-ly."}, {"n": 9, "en": "Work in pairs.", "vi": "Các em hãy làm việc theo cặp.", "lv": "A2", "ipa": "ˈwɜːk ɪn ˈpeəz", "tip": "“pairs” kết thúc bằng âm /z/ (rung), không phải /s/."}, {"n": 10, "en": "Work in groups.", "vi": "Các em hãy làm việc theo nhóm.", "lv": "A2", "ipa": "ˈwɜːk ɪn ˈɡruːps", "tip": "Đọc rõ cụm /ps/ cuối “groups”."}]}, {"vi": "Kiểm tra mức độ hiểu bài", "en": "Checking Understanding", "items": [{"n": 11, "en": "Do you understand?", "vi": "Các em có hiểu không?", "lv": "A2", "ipa": "duː juː ˌʌndəˈstænd", "tip": "“understand” nhấn âm cuối: un-der-STAND."}, {"n": 12, "en": "Is everything clear?", "vi": "Mọi thứ đã rõ ràng chưa?", "lv": "A2", "ipa": "ɪz ˈevriθɪŋ ˈklɪə", "tip": "“everything” có âm /θ/: đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi, không đọc thành “th” tiếng Việt."}, {"n": 13, "en": "Any questions?", "vi": "Các em có câu hỏi nào không?", "lv": "A2", "ipa": "ˈeni ˈkwestʃənz"}, {"n": 14, "en": "Is that correct?", "vi": "Như vậy đã đúng chưa?", "lv": "A2", "ipa": "ɪz ˈðæt kəˈrekt", "tip": "“correct” nhấn âm thứ hai: cor-RECT. Âm “cor” đọc nhẹ /kə/."}]}, {"vi": "Yêu cầu học sinh trả lời", "en": "Asking Students to Answer", "items": [{"n": 15, "en": "Who would like to answer?", "vi": "Bạn nào muốn trả lời?", "lv": "A2", "ipa": "huː wʊd ˈlaɪk tu ˈɑːnsə", "tip": "“would” đọc nhẹ, gần như /wʊd/; “to answer” nối liền /tu ˈɑːnsə/."}, {"n": 16, "en": "Raise your hand, please.", "vi": "Các em hãy giơ tay nhé.", "lv": "A2", "ipa": "ˈreɪz jɔː ˈhænd | pliːz"}, {"n": 17, "en": "Come to the board, please.", "vi": "Mời em lên bảng.", "lv": "A2", "ipa": "ˈkʌm tə ðə ˈbɔːd | pliːz"}, {"n": 18, "en": "Read your answer.", "vi": "Các em hãy đọc câu trả lời của mình.", "lv": "A2", "ipa": "ˈriːd jɔːr ˈɑːnsə"}, {"n": 19, "en": "Can you compare your method with your classmate's?", "vi": "Em hãy so sánh cách làm của mình với các bạn.", "lv": "A2", "ipa": "kən juː kəmˈpeə jɔː ˈmeθəd wɪð jɔː ˈklɑːsmeɪts", "tip": "“compare” nhấn âm thứ hai; “method” có âm /θ/; “classmate's” kết thúc bằng /ts/."}, {"n": 20, "en": "Can anyone solve it in a different way?", "vi": "Có bạn nào giải theo cách khác không?", "lv": "A2", "ipa": "kən ˈeniwʌn ˈsɒlv ɪt ɪn ə ˈdɪfrənt ˈweɪ", "tip": "Nối âm: “solve it in a” đọc liền như /ˈsɒlvɪtɪnə/."}]}, {"vi": "Theo dõi hoạt động học tập", "en": "Monitoring Activities", "items": [{"n": 21, "en": "Keep working.", "vi": "Các em cứ tiếp tục làm bài nhé.", "lv": "A2", "ipa": "ˈkiːp ˈwɜːkɪŋ"}, {"n": 22, "en": "You have five minutes left.", "vi": "Các em còn năm phút nữa.", "lv": "A2", "ipa": "juː həv ˈfaɪv ˈmɪnɪts ˈleft", "tip": "“minutes” đọc /ˈmɪnɪts/ (mi-nits), không đọc “mi-niu”."}, {"n": 23, "en": "Time is up!", "vi": "Hết giờ!", "lv": "A2", "ipa": "ˈtaɪm ɪz ˈʌp", "tip": "Nối âm: “Time is up” đọc liền /ˈtaɪmɪˈzʌp/."}, {"n": 24, "en": "Do you need any help?", "vi": "Em có cần giúp không?", "lv": "A2", "ipa": "duː juː ˈniːd ˈeni ˈhelp"}, {"n": 25, "en": "How is your group doing?", "vi": "Nhóm em làm đến đâu rồi?", "lv": "B1", "ipa": "ˈhaʊ ɪz jɔː ˈɡruːp ˈduːɪŋ"}, {"n": 26, "en": "Have you finished?", "vi": "(Các) em làm xong chưa?", "lv": "B1", "ipa": "həv juː ˈfɪnɪʃt", "tip": "Đuôi -ed trong “finished” đọc là /t/: /ˈfɪnɪʃt/."}, {"n": 27, "en": "Check your answers before we discuss them.", "vi": "Hãy kiểm tra lại đáp án trước khi chữa bài.", "lv": "B1", "ipa": "ˈtʃek jɔːr ˈɑːnsəz bɪˈfɔː wiː dɪˈskʌs ðəm", "tip": "“answers” kết thúc bằng /z/; “discuss” nhấn âm thứ hai: dis-CUSS."}]}, {"vi": "Nhận xét và phản hồi", "en": "Giving Feedback", "items": [{"n": 28, "en": "That's correct.", "vi": "Làm như vậy là đúng rồi.", "lv": "A2", "ipa": "ˈðæts kəˈrekt", "tip": "“That's” bắt đầu bằng /ð/ (lưỡi giữa răng, có rung) và kết thúc bằng /ts/."}, {"n": 29, "en": "Well done!", "vi": "Em làm tốt lắm!", "lv": "A2", "ipa": "ˌwel ˈdʌn"}, {"n": 30, "en": "Good job!", "vi": "Tốt lắm!", "lv": "A2", "ipa": "ˌɡʊd ˈdʒɒb"}, {"n": 31, "en": "Try again.", "vi": "Em hãy thử lại nhé.", "lv": "A2", "ipa": "ˈtraɪ əˈɡen", "tip": "“again” có thể đọc /əˈɡen/ (phổ biến ở Anh) hoặc /əˈɡeɪn/."}, {"n": 32, "en": "Check your calculation again.", "vi": "(Các) em hãy kiểm tra lại phép tính nhé.", "lv": "A2", "ipa": "ˈtʃek jɔː ˌkælkjuˈleɪʃn̩ əˈɡen", "tip": "“calculation” nhấn âm thứ ba: cal-cu-LA-tion."}, {"n": 33, "en": "That's a good idea.", "vi": "Đó là một ý hay.", "lv": "A2", "ipa": "ˈðæts ə ˌɡʊd aɪˈdɪə", "tip": "“idea” nhấn âm thứ hai: i-DE-a /aɪˈdɪə/."}, {"n": 34, "en": "You're on the right track.", "vi": "Em đang đi đúng hướng rồi đấy.", "lv": "A2", "ipa": "jɔːr ɒn ðə ˈraɪt ˈtræk", "tip": "“track” đọc cụm /tr/ liền nhau, không chèn nguyên âm vào giữa."}, {"n": 35, "en": "Your reasoning is correct, but there is a small mistake in the calculation.", "vi": "Lập luận của em đúng, nhưng có một lỗi nhỏ trong tính toán.", "lv": "A2", "ipa": "jɔː ˈriːzənɪŋ ɪz kəˈrekt | bət ðeər ɪz ə ˈsmɔːl mɪˈsteɪk ɪn ðə ˌkælkjuˈleɪʃn̩", "tip": "Câu dài: ngắt hơi sau “correct”. “reasoning” nhấn âm đầu; “mistake” nhấn âm hai."}, {"n": 36, "en": "Can you improve your solution?", "vi": "Em có thể cải thiện lời giải của mình không?", "lv": "A2", "ipa": "kən juː ɪmˈpruːv jɔː səˈluːʃn̩", "tip": "“improve” nhấn âm thứ hai: im-PROVE; “solution” kết thúc bằng /ʃn̩/."}]}, {"vi": "Quản lý lớp học", "en": "Classroom Management", "items": [{"n": 37, "en": "Please be quiet.", "vi": "Các em giữ trật tự nhé.", "lv": "A2", "ipa": "pliːz bi ˈkwaɪət", "tip": "“quiet” có hai âm tiết /ˈkwaɪət/, khác với “quite” /kwaɪt/."}, {"n": 38, "en": "Listen carefully.", "vi": "Các em chú ý lắng nghe nhé.", "lv": "A2", "ipa": "ˈlɪsn̩ ˈkeəfəli", "tip": "Chữ “t” trong “listen” là âm câm: /ˈlɪsn̩/."}, {"n": 39, "en": "Sit down, please.", "vi": "Mời cả lớp ngồi.", "lv": "A2", "ipa": "ˌsɪt ˈdaʊn | pliːz"}, {"n": 40, "en": "Stand up, please.", "vi": "Mời cả lớp đứng lên.", "lv": "A2", "ipa": "ˌstænd ˈʌp | pliːz"}, {"n": 41, "en": "Close your books.", "vi": "Các em hãy gấp sách lại.", "lv": "A2", "ipa": "ˈkləʊz jɔː ˈbʊks", "tip": "“close” (động từ) đọc /kləʊz/ với âm /z/; “books” kết thúc bằng /ks/."}, {"n": 42, "en": "Let's focus on the task.", "vi": "Các em hãy tập trung vào nhiệm vụ được giao.", "lv": "A2", "ipa": "lets ˈfəʊkəs ɒn ðə ˈtɑːsk", "tip": "“task” có cụm /sk/ cuối, đọc rõ cả hai âm."}, {"n": 43, "en": "Please speak one at a time.", "vi": "Mỗi lần một bạn phát biểu nhé.", "lv": "A2", "ipa": "pliːz ˈspiːk ˈwʌn ət ə ˈtaɪm"}, {"n": 44, "en": "Please respect each other's ideas.", "vi": "(Các) em hãy tôn trọng ý kiến của nhau.", "lv": "A2", "ipa": "pliːz rɪˈspekt ˌiːtʃ ˈʌðəz aɪˈdɪəz", "tip": "“respect” nhấn âm hai; “ideas” nhấn âm hai và kết thúc bằng /z/."}, {"n": 45, "en": "Let's keep our discussion focused.", "vi": "Hãy giữ cho phần thảo luận đi vào đúng trọng tâm.", "lv": "A2", "ipa": "lets ˈkiːp aʊə dɪˈskʌʃn̩ ˈfəʊkəst", "tip": "Đuôi -ed trong “focused” đọc là /t/: /ˈfəʊkəst/."}]}, {"vi": "Khuyến khích học sinh", "en": "Encouraging Students", "items": [{"n": 46, "en": "Keep trying.", "vi": "Các em tiếp tục cố gắng nhé.", "lv": "A2", "ipa": "ˈkiːp ˈtraɪɪŋ"}, {"n": 47, "en": "Take your time.", "vi": "Các em cứ bình tĩnh nhé.", "lv": "A2", "ipa": "ˈteɪk jɔː ˈtaɪm"}, {"n": 48, "en": "Don't worry.", "vi": "Các em đừng lo.", "lv": "A2", "ipa": "ˈdəʊnt ˈwʌri", "tip": "Đọc rõ /nt/ cuối “Don't”, nếu không sẽ nghe giống “Do worry”."}, {"n": 49, "en": "Don't be afraid to make mistakes.", "vi": "Các em đừng sợ/ngại mắc lỗi.", "lv": "A2", "ipa": "ˈdəʊnt bi əˈfreɪd tə ˈmeɪk mɪˈsteɪks", "tip": "“afraid” nhấn âm thứ hai; “mistakes” kết thúc bằng /ks/."}, {"n": 50, "en": "Have another look.", "vi": "(Các) em xem lại một lần nữa nhé.", "lv": "A2", "ipa": "ˈhæv əˌnʌðə ˈlʊk"}, {"n": 51, "en": "There may be more than one correct method.", "vi": "Có thể có nhiều hơn một cách giải đúng.", "lv": "A2", "ipa": "ðeə ˈmeɪ bi ˈmɔː ðən ˈwʌn kəˈrekt ˈmeθəd", "tip": "“method” có âm /θ/; “than” đọc nhẹ /ðən/."}, {"n": 52, "en": "Can anyone build on this idea?", "vi": "Có bạn nào muốn bổ sung thêm ý này không?", "lv": "A2", "ipa": "kən ˈeniwʌn ˈbɪld ɒn ðɪs aɪˈdɪə"}]}, {"vi": "Kết thúc bài học", "en": "Ending the Lesson", "items": [{"n": 53, "en": "Time is up.", "vi": "Hết giờ.", "lv": "A2", "ipa": "ˈtaɪm ɪz ˈʌp"}, {"n": 54, "en": "Thank you, everyone.", "vi": "Cảm ơn các em.", "lv": "A2", "ipa": "ˈθæŋk juː | ˈevriwʌn", "tip": "“Thank” bắt đầu bằng /θ/ (lưỡi giữa răng), không đọc thành /t/."}, {"n": 55, "en": "See you next lesson.", "vi": "Hẹn gặp các em vào buổi sau.", "lv": "A2", "ipa": "ˈsiː juː ˈnekst ˈlesn̩"}, {"n": 56, "en": "Don't forget your homework.", "vi": "Đừng quên làm bài tập về nhà.", "lv": "A2", "ipa": "ˈdəʊnt fəˈɡet jɔː ˈhəʊmwɜːk", "tip": "“forget” nhấn âm thứ hai; “homework” nhấn âm đầu."}, {"n": 57, "en": "Please review today's lesson.", "vi": "Hãy ôn lại bài học hôm nay.", "lv": "A2", "ipa": "pliːz rɪˈvjuː təˈdeɪz ˈlesn̩", "tip": "“review” nhấn âm thứ hai: re-VIEW."}, {"n": 58, "en": "Next lesson, we'll continue with...", "vi": "Buổi học sau chúng ta sẽ tiếp tục với...", "lv": "A2", "ipa": "ˈnekst ˈlesn̩ | wiːl kənˈtɪnjuː wɪð", "say": "Next lesson, we'll continue with"}, {"n": 59, "en": "Thank you for your participation today.", "vi": "Cảm ơn các em đã tham gia tích cực trong buổi học hôm nay.", "lv": "A2", "ipa": "ˈθæŋk juː fə jɔː pɑːˌtɪsɪˈpeɪʃn̩ təˈdeɪ", "tip": "“participation” nhấn âm thứ tư: par-ti-ci-PA-tion."}]}];
+
+</script>
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const store = {
+    get(k, d){ try { const v = localStorage.getItem('ce-'+k); return v === null ? d : JSON.parse(v); } catch(e){ return d; } },
+    set(k, v){ try { localStorage.setItem('ce-'+k, JSON.stringify(v)); } catch(e){} }
+  };
+  const ALL = [];
+  DATA.forEach((s, si) => s.items.forEach(it => { it.si = si; ALL.push(it); }));
+
+  const state = {
+    q: '', accent: store.get('accent','GB'), voiceName: store.get('voice',''), rate: store.get('rate',0.9),
+    ipa: store.get('ipa',true), tip: store.get('tip',true), vi: true, en: true, readVi: store.get('readVi',true),
+    b1: false, star: false, stars: new Set(store.get('stars',[])),
+  };
+
+  /* ---------- Speech ---------- */
+  const synth = window.speechSynthesis;
+  let voices = [];
+  let runId = 0;
+  function loadVoices(){
+    if(!synth) return;
+    voices = synth.getVoices();
+    fillVoiceSelect();
+    updateNotice();
+  }
+  function enVoices(){
+    const want = state.accent === 'GB' ? 'en-gb' : 'en-us';
+    const norm = v => v.lang.toLowerCase().replace('_','-');
+    let list = voices.filter(v => norm(v).startsWith(want));
+    if(!list.length) list = voices.filter(v => norm(v).startsWith('en'));
+    const score = v => (/natural|neural|online|google|premium|enhanced/i.test(v.name) ? 0 : 1);
+    return list.slice().sort((a,b) => score(a) - score(b) || a.name.localeCompare(b.name));
+  }
+  function viVoice(){
+    const list = voices.filter(v => v.lang.toLowerCase().replace('_','-').startsWith('vi'));
+    const score = v => (/natural|neural|online|google/i.test(v.name) ? 0 : 1);
+    return list.sort((a,b) => score(a) - score(b))[0] || null;
+  }
+  function currentEnVoice(){
+    const list = enVoices();
+    return list.find(v => v.name === state.voiceName) || list[0] || null;
+  }
+  function fillVoiceSelect(){
+    const sel = $('#voice');
+    const list = enVoices();
+    sel.innerHTML = '';
+    if(!list.length){ const o = document.createElement('option'); o.textContent = 'Mặc định của máy'; sel.appendChild(o); sel.disabled = true; return; }
+    sel.disabled = false;
+    list.forEach(v => { const o = document.createElement('option'); o.value = v.name; o.textContent = v.name.replace(/^(Microsoft|Google)\s+/,'').replace(/\s*-\s*English.*$/,'').slice(0,40); sel.appendChild(o); });
+    const cur = currentEnVoice();
+    if(cur) sel.value = cur.name;
+  }
+  function updateNotice(){
+    const n = $('#notice'), t = $('#noticeText');
+    if(!synth){ t.textContent = 'Trình duyệt này không hỗ trợ đọc thành tiếng. Hãy mở trang bằng Chrome, Edge hoặc Safari bản mới.'; n.hidden = false; return; }
+    n.hidden = true;
+    document.querySelectorAll('[data-act="vi"]').forEach(b => { b.disabled = !viVoice(); b.title = viVoice() ? 'Nghe tiếng Việt' : 'Máy chưa có giọng đọc tiếng Việt'; });
+  }
+  if(synth){ loadVoices(); synth.onvoiceschanged = loadVoices; setTimeout(loadVoices, 600); }
+  else updateNotice();
+
+  function speak(text, lang, opts){
+    opts = opts || {};
+    return new Promise(resolve => {
+      if(!synth){ resolve(); return; }
+      const u = new SpeechSynthesisUtterance(text);
+      if(lang === 'vi'){ const v = viVoice(); if(v){ u.voice = v; u.lang = v.lang; } else u.lang = 'vi-VN'; u.rate = Math.min(1, state.rate + 0.05); }
+      else { const v = currentEnVoice(); if(v){ u.voice = v; u.lang = v.lang; } else u.lang = state.accent === 'GB' ? 'en-GB' : 'en-US'; u.rate = (opts.slow ? Math.max(0.5, state.rate - 0.3) : state.rate); }
+      if(opts.onBoundary) u.onboundary = opts.onBoundary;
+      let done = false; const fin = () => { if(!done){ done = true; resolve(); } };
+      u.onend = fin; u.onerror = fin;
+      synth.speak(u);
+      // safety net for engines that never fire onend
+      setTimeout(fin, 2500 + text.length * 160 / u.rate);
+    });
+  }
+  function stopAll(){ runId++; if(synth) synth.cancel(); clearHighlights(); }
+  function clearHighlights(){
+    document.querySelectorAll('.row.speaking').forEach(r => r.classList.remove('speaking'));
+    document.querySelectorAll('.w.hl').forEach(w => w.classList.remove('hl'));
+    document.querySelectorAll('.play-sec.playing').forEach(b => { b.classList.remove('playing'); b.lastChild.textContent = ' Phát cả phần'; });
+  }
+  const sayText = it => (it.say || it.en).replace(/\.\.\.|…/g,'');
+
+  async function playItem(it, opts){
+    opts = opts || {};
+    const my = opts.keep ? runId : (stopAll(), runId);
+    const row = document.getElementById('r'+it.n);
+    if(row) row.classList.add('speaking');
+    const words = row ? Array.from(row.querySelectorAll('.en .w')) : [];
+    const text = sayText(it);
+    const onBoundary = (it.say || !words.length) ? null : (e => {
+      if(e.name && e.name !== 'word') return;
+      words.forEach(w => w.classList.toggle('hl', +w.dataset.s <= e.charIndex && e.charIndex < +w.dataset.e));
+    });
+    if(opts.lang === 'vi') await speak(it.vi.replace(/[()]/g,''), 'vi');
+    else await speak(text, 'en', { slow: opts.slow, onBoundary });
+    if(my !== runId) return false;
+    if(row){ row.classList.remove('speaking'); words.forEach(w => w.classList.remove('hl')); }
+    return true;
+  }
+  async function playSection(si, btn){
+    stopAll();
+    const my = runId;
+    btn.classList.add('playing'); btn.lastChild.textContent = ' Dừng';
+    const items = visibleItems().filter(it => it.si === si);
+    for(const it of items){
+      const row = document.getElementById('r'+it.n);
+      if(row) row.scrollIntoView({ block:'nearest', behavior:'smooth' });
+      if(!(await playItem(it, { keep:true }))) return;
+      if(state.readVi && viVoice()){
+        if(row) row.classList.add('speaking');
+        await speak(it.vi.replace(/[()]/g,''), 'vi');
+        if(my !== runId) return;
+        if(row) row.classList.remove('speaking');
+      }
+      await new Promise(r => setTimeout(r, 650));
+      if(my !== runId) return;
+    }
+    clearHighlights();
+  }
+
+  /* ---------- Rendering ---------- */
+  const fold = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').replace(/[’']/g,"'");
+  function visibleItems(){
+    const q = fold(state.q.trim());
+    return ALL.filter(it =>
+      (!q || fold(it.en).includes(q) || fold(it.vi).includes(q)) &&
+      (!state.b1 || it.lv === 'B1') &&
+      (!state.star || state.stars.has(it.n)));
+  }
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function wordsHtml(en){
+    let out = '', re = /[A-Za-z’']+/g, m, last = 0;
+    while((m = re.exec(en))){
+      out += esc(en.slice(last, m.index));
+      out += '<span class="w" data-s="'+m.index+'" data-e="'+(m.index+m[0].length)+'" data-w="'+esc(m[0])+'" title="Nghe từ “'+esc(m[0])+'”">'+esc(m[0])+'</span>';
+      last = m.index + m[0].length;
+    }
+    return out + esc(en.slice(last));
+  }
+  const ICON = {
+    play:'<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>',
+    slow:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg>',
+    vi:'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>',
+    star:'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9z"/></svg>',
+    bulb:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg>',
+    playAll:'<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 4.5v15l11-7.5zM18 5h2v14h-2z"/></svg>'
+  };
+  function render(){
+    const items = visibleItems();
+    $('#statShown').textContent = items.length;
+    const list = $('#list');
+    if(!items.length){ list.innerHTML = '<p class="empty">Không có câu nào khớp. Thử bỏ bớt bộ lọc hoặc tìm từ khác.</p>'; return; }
+    let html = '';
+    DATA.forEach((s, si) => {
+      const its = items.filter(it => it.si === si);
+      if(!its.length) return;
+      html += '<section class="sec" id="sec'+(si+1)+'" data-si="'+si+'"><div class="sec-head"><h2><span class="num">'+(si+1)+'.</span>'+esc(s.vi)+'<small>'+esc(s.en)+'</small></h2>'+
+        '<button type="button" class="play-sec" data-si="'+si+'">'+ICON.playAll+'<span> Phát cả phần</span></button></div>';
+      its.forEach(it => {
+        const starred = state.stars.has(it.n);
+        html += '<div class="row" id="r'+it.n+'" data-n="'+it.n+'">'+
+          '<div class="n">'+it.n+'</div>'+
+          '<div><div class="en">'+wordsHtml(it.en)+'</div><div class="ipa">/'+esc(it.ipa)+'/</div>'+
+            (it.tip ? '<div class="tip">'+ICON.bulb+'<span>'+esc(it.tip)+'</span></div>' : '')+'</div>'+
+          '<div class="vi"><span class="txt">'+esc(it.vi)+'</span><span class="lv '+it.lv+'">'+it.lv+'</span></div>'+
+          '<div class="acts">'+
+            '<button type="button" class="ib primary" data-act="en" aria-label="Nghe câu tiếng Anh" title="Nghe tiếng Anh">'+ICON.play+'</button>'+
+            '<button type="button" class="ib" data-act="slow" aria-label="Nghe chậm" title="Nghe chậm">'+ICON.slow+'</button>'+
+            '<button type="button" class="ib" data-act="vi" aria-label="Nghe câu tiếng Việt" title="Nghe tiếng Việt"'+(voices.length && !viVoice() ? ' disabled' : '')+'>'+ICON.vi+'<span class="lbl">VI</span></button>'+
+            '<button type="button" class="ib star" data-act="star" aria-pressed="'+starred+'" aria-label="Đánh dấu câu hay dùng" title="Đánh dấu câu hay dùng">'+ICON.star+'</button>'+
+          '</div></div>';
+      });
+      html += '</section>';
+    });
+    list.innerHTML = html;
+  }
+  function renderArc(){
+    $('#arc').innerHTML = DATA.map((s, i) => '<button type="button" data-si="'+i+'"><span>'+(i+1)+'</span>'+esc(s.vi)+'</button>').join('');
+  }
+
+  /* ---------- Events ---------- */
+  $('#list').addEventListener('click', e => {
+    const w = e.target.closest('.w');
+    const btn = e.target.closest('button');
+    if(btn && btn.classList.contains('play-sec')){
+      if(btn.classList.contains('playing')) stopAll(); else playSection(+btn.dataset.si, btn);
+      return;
+    }
+    const row = e.target.closest('.row');
+    if(!row) return;
+    const it = ALL[+row.dataset.n - 1];
+    if(btn){
+      const a = btn.dataset.act;
+      if(a === 'en') playItem(it);
+      else if(a === 'slow') playItem(it, { slow:true });
+      else if(a === 'vi') playItem(it, { lang:'vi' });
+      else if(a === 'star'){
+        state.stars.has(it.n) ? state.stars.delete(it.n) : state.stars.add(it.n);
+        store.set('stars', Array.from(state.stars));
+        btn.setAttribute('aria-pressed', state.stars.has(it.n));
+        if(state.star) render();
+      }
+      return;
+    }
+    if(document.body.classList.contains('no-en') && e.target.closest('.en')){ e.target.closest('.en').style.filter = 'none'; return; }
+    if(document.body.classList.contains('no-vi') && e.target.closest('.vi .txt')){ e.target.closest('.txt').style.filter = 'none'; return; }
+    if(w){ stopAll(); w.classList.add('hl'); speak(w.dataset.w.replace('’',"'"), 'en').then(() => w.classList.remove('hl')); return; }
+    if(e.target.closest('.en')) playItem(it);
+  });
+  $('#arc').addEventListener('click', e => {
+    const b = e.target.closest('button'); if(!b) return;
+    const el = document.getElementById('sec'+(+b.dataset.si+1));
+    if(el) el.scrollIntoView({ behavior:'smooth', block:'start' });
+  });
+  // highlight current stage in the arc
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => { if(en.isIntersecting){ const si = en.target.dataset.si; document.querySelectorAll('#arc button').forEach(b => b.classList.toggle('on', b.dataset.si === si)); } });
+  }, { rootMargin:'-30% 0px -60% 0px' });
+  const observe = () => document.querySelectorAll('.sec').forEach(s => obs.observe(s));
+
+  let qT; $('#q').addEventListener('input', e => { clearTimeout(qT); qT = setTimeout(() => { state.q = e.target.value; render(); observe(); }, 120); });
+  function setAccent(a){
+    state.accent = a; store.set('accent', a);
+    $('#accGB').setAttribute('aria-pressed', a === 'GB'); $('#accUS').setAttribute('aria-pressed', a === 'US');
+    state.voiceName = ''; fillVoiceSelect();
+  }
+  $('#accGB').onclick = () => setAccent('GB');
+  $('#accUS').onclick = () => setAccent('US');
+  $('#voice').onchange = e => { state.voiceName = e.target.value; store.set('voice', state.voiceName); playItem(ALL[0]); };
+  const rate = $('#rate');
+  rate.value = state.rate; $('#rateVal').textContent = (+state.rate).toFixed(2).replace(/0$/,'') + '×';
+  rate.oninput = () => { state.rate = +rate.value; store.set('rate', state.rate); $('#rateVal').textContent = state.rate.toFixed(2).replace(/0$/,'') + '×'; };
+
+  function toggle(id, key, cls, persist){
+    const b = $(id);
+    const apply = () => { b.setAttribute('aria-pressed', state[key]); if(cls) document.body.classList.toggle(cls, !state[key]); };
+    apply();
+    b.onclick = () => { state[key] = !state[key]; if(persist) store.set(key, state[key]); apply();
+      if(key === 'vi' || key === 'en') document.querySelectorAll('.en,.vi .txt').forEach(x => x.style.filter = '');
+      if(key === 'b1' || key === 'star'){ render(); observe(); } };
+  }
+  toggle('#tIpa','ipa','no-ipa',true);
+  toggle('#tTip','tip','no-tip',true);
+  toggle('#tVi','vi','no-vi');
+  toggle('#tEn','en','no-en');
+  toggle('#tReadVi','readVi',null,true);
+  toggle('#fB1','b1');
+  toggle('#fStar','star');
+
+  /* ---------- Practice / projector mode ---------- */
+  const P = { list: [], i: 0, dir: 'VE', shown: false };
+  function openPractice(){
+    stopAll();
+    P.list = visibleItems().slice(); P.i = 0; P.shown = false;
+    if(!P.list.length) P.list = ALL.slice();
+    $('#practice').hidden = false; document.body.style.overflow = 'hidden';
+    showCard(); $('#pReveal').focus();
+  }
+  function closePractice(){ stopAll(); $('#practice').hidden = true; document.body.style.overflow = ''; }
+  function showCard(){
+    const it = P.list[P.i];
+    $('#pMeta').textContent = 'Câu ' + (P.i+1) + ' / ' + P.list.length;
+    $('#pSec').textContent = (it.si+1) + '. ' + DATA[it.si].vi + ' · ' + it.lv;
+    const q = $('#pQ'), a = $('#pA');
+    if(P.dir === 'VE'){
+      q.textContent = it.vi; q.className = 'p-q vi-q';
+      a.innerHTML = '<div class="a'+(P.shown?'':' hide')+'">'+esc(it.en)+'</div><div class="i'+(P.shown?'':' hide')+'">/'+esc(it.ipa)+'/</div>';
+    } else {
+      q.textContent = it.en; q.className = 'p-q';
+      a.innerHTML = '<div class="i">/'+esc(it.ipa)+'/</div><div class="a vi-a'+(P.shown?'':' hide')+'">'+esc(it.vi)+'</div>';
+    }
+    $('#pReveal').textContent = P.shown ? 'Ẩn đáp án' : 'Hiện đáp án';
+  }
+  function reveal(){ P.shown = !P.shown; showCard(); if(P.shown && P.dir === 'VE') playItem(P.list[P.i]); }
+  function go(d){ P.i = (P.i + d + P.list.length) % P.list.length; P.shown = false; stopAll(); showCard(); if(P.dir === 'EV') playItem(P.list[P.i]); }
+  function setDir(d){ P.dir = d; P.shown = false; $('#dirVE').setAttribute('aria-pressed', d === 'VE'); $('#dirEV').setAttribute('aria-pressed', d === 'EV'); showCard(); }
+  $('#openPractice').onclick = openPractice;
+  $('#pClose').onclick = closePractice;
+  $('#pReveal').onclick = reveal;
+  $('#pNext').onclick = () => go(1);
+  $('#pPrev').onclick = () => go(-1);
+  $('#pListen').onclick = () => playItem(P.list[P.i]);
+  $('#pSlow').onclick = () => playItem(P.list[P.i], { slow:true });
+  $('#pShuffle').onclick = () => { for(let i = P.list.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [P.list[i], P.list[j]] = [P.list[j], P.list[i]]; } P.i = 0; P.shown = false; showCard(); };
+  $('#dirVE').onclick = () => setDir('VE');
+  $('#dirEV').onclick = () => setDir('EV');
+  document.addEventListener('keydown', e => {
+    if($('#practice').hidden) return;
+    if(e.key === 'Escape') closePractice();
+    else if(e.key === 'ArrowRight') go(1);
+    else if(e.key === 'ArrowLeft') go(-1);
+    else if(e.key === ' ' && !(e.target instanceof HTMLButtonElement)){ e.preventDefault(); reveal(); }
+    else if(e.key.toLowerCase() === 'l') playItem(P.list[P.i]);
+  });
+
+  renderArc(); render(); observe();
+  $('#accGB').setAttribute('aria-pressed', state.accent === 'GB'); $('#accUS').setAttribute('aria-pressed', state.accent === 'US');
+})();
+</script>
+</body>
+</html>
